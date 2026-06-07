@@ -84,19 +84,19 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-white mb-6">Para quem é?</h2>
               <div className="grid grid-cols-1 gap-6">
                 <div className="space-y-3 text-center">
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#F97316]">
+                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#0D2B5E]">
                     <FontAwesomeIcon icon={faGraduationCap} className="h-12 w-12" aria-hidden />
                   </div>
                   <p className="text-sm font-semibold text-white">ESTUDANTE DO ENSINO DE BASE, MÉDIO E SUPERIOR</p>
                 </div>
                 <div className="space-y-3 text-center">
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#F97316]">
+                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#0D2B5E]">
                     <FontAwesomeIcon icon={faClipboardList} className="h-12 w-12" aria-hidden />
                   </div>
                   <p className="text-sm font-semibold text-white">CONCURSEIROS</p>
                 </div>
                 <div className="space-y-3 text-center">
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#F97316]">
+                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#0D2B5E]">
                     <FontAwesomeIcon icon={faBookOpen} className="h-12 w-12" aria-hidden />
                   </div>
                   <p className="text-sm font-semibold text-white">ESTUDANTE QUE PRECISAM DE REFORÇO EM MATEMÁTICA</p>
