@@ -1,11 +1,15 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="bg-[#F4F7FC]">
       {/* Navbar */}
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
-        <span className="text-xl font-bold text-[#0D2B5E]">Axis Education</span>
+        <div className="flex items-center gap-2">
+          <Image src="/assets/logoaxis.png" alt="Axis Education" width={36} height={36} className="rounded-lg" />
+          <span className="text-xl font-bold text-[#0D2B5E]">Axis Education</span>
+        </div>
         <div className="flex items-center gap-3">
           <Link href="/login" className="rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-[#0D2B5E] hover:bg-slate-50 transition-colors">
             Entrar
