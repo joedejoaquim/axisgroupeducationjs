@@ -82,31 +82,31 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#0D2B5E]">Para quem é?</h2>
             <div className="rounded-2xl bg-[#F97316] p-8 shadow-lg border border-slate-200 max-w-2xl">
+              <h2 className="text-3xl font-bold text-white mb-6">Para quem é?</h2>
               <div className="grid grid-cols-1 gap-6">
                 <div className="space-y-3 text-center">
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-slate-100 text-[#0D2B5E]">
+                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#F97316]">
                     <FontAwesomeIcon icon={faGraduationCap} className="h-12 w-12" aria-hidden />
                   </div>
-                  <p className="text-sm font-semibold text-[#0D2B5E]">ESTUDANTE DO ENSINO DE BASE, MÉDIO E SUPERIOR</p>
+                  <p className="text-sm font-semibold text-white">ESTUDANTE DO ENSINO DE BASE, MÉDIO E SUPERIOR</p>
                 </div>
                 <div className="space-y-3 text-center">
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-slate-100 text-[#0D2B5E]">
+                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#F97316]">
                     <FontAwesomeIcon icon={faClipboardList} className="h-12 w-12" aria-hidden />
                   </div>
-                  <p className="text-sm font-semibold text-[#0D2B5E]">CONCURSEIROS</p>
+                  <p className="text-sm font-semibold text-white">CONCURSEIROS</p>
                 </div>
                 <div className="space-y-3 text-center">
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-slate-100 text-[#0D2B5E]">
+                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white text-[#F97316]">
                     <FontAwesomeIcon icon={faBookOpen} className="h-12 w-12" aria-hidden />
                   </div>
-                  <p className="text-sm font-semibold text-[#0D2B5E]">ESTUDANTE QUE PRECISAM DE REFORÇO EM MATEMÁTICA</p>
+                  <p className="text-sm font-semibold text-white">ESTUDANTE QUE PRECISAM DE REFORÇO EM MATEMÁTICA</p>
                 </div>
               </div>
 
-              <div className="mt-6 flex flex-col gap-4 rounded-2xl bg-slate-100 p-4 sm:flex-row sm:items-center sm:justify-between">
-                <p className="text-sm font-semibold text-slate-700">Quer ser o próximo a aprovar?</p>
+              <div className="mt-6 flex flex-col gap-4 rounded-2xl bg-white p-4 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-sm font-semibold text-[#F97316]">Quer ser o próximo a aprovar?</p>
                 <button className="inline-flex items-center gap-2 rounded-full bg-[#0D2B5E] px-5 py-3 text-sm font-semibold text-white hover:bg-[#0b2548]">
                   <span>Avançar</span>
                   <ArrowRight size={16} />
