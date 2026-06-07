@@ -24,83 +24,47 @@ export default function Home() {
             </h1>
 
             <div className="rounded-2xl bg-white p-8 shadow-lg border border-slate-200 max-w-2xl">
-              <h2 className="text-2xl font-extrabold text-[#0D2B5E]">MATEMÁTICA COMPLETA</h2>
-              <p className="mt-3 text-slate-700">APRENDA TODA MATEMÁTICA, DESDE O ZERO, DE UMA VEZ POR TODAS DE FORMA RÁPIDA E EFICIENTE PARA GARANTIR SUA APROVAÇÃO</p>
+              <h2 className="text-3xl font-extrabold text-[#0D2B5E]">Prof Hélder</h2>
+              <p className="mt-1 text-lg font-semibold text-[#F97316]">Matemática sem limites</p>
 
-              <div className="mt-6 flex items-center gap-4">
-                <button className="rounded-full bg-[#F97316] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#EA6C0A]">ASSINE AGORA!</button>
-                <div className="text-sm text-slate-500">Prof Hélder — Matemática sem limites</div>
-              </div>
+              <p className="mt-4 text-slate-700">MATEMÁTICA COMPLETA — APRENDA TODA MATEMÁTICA, DESDE O ZERO, DE UMA VEZ POR TODAS DE FORMA RÁPIDA E EFICIENTE PARA GARANTIR SUA APROVAÇÃO</p>
 
               <ul className="mt-6 space-y-2 text-slate-700 list-inside">
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />MATEMÁTICA DO BÁSICO AO AVANÇADO</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />SIMULADOS POR MÓDULOS</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />AULAS AO VIVO DE REVISÃO</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />APRENDA A INTERPRETAR QUESTÕES</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />COMUNIDADE DE ALUNOS</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />ACESSO COMPLETO</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />EXERCÍCIOS RESOLVIDOS EM VÍDEO</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />ACESSO POR 12 MESES</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />CRONOGRAMA DE ESTUDOS</li>
-                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1" aria-hidden />TODO CONTEÚDO DO SEU EDITAL</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />MATEMÁTICA DO BÁSICO AO AVANÇADO</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />SIMULADOS POR MÓDULOS</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />AULAS AO VIVO DE REVISÃO</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />APRENDA A INTERPRETAR QUESTÕES</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />COMUNIDADE DE ALUNOS</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />ACESSO COMPLETO</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />EXERCÍCIOS RESOLVIDOS EM VÍDEO</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />ACESSO POR 12 MESES</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />CRONOGRAMA DE ESTUDOS</li>
+                <li className="flex items-start gap-2"><FontAwesomeIcon icon={faCheckCircle} className="text-emerald-500 mt-1 w-4 h-4 flex-shrink-0" aria-hidden />TODO CONTEÚDO DO SEU EDITAL</li>
               </ul>
-            </div>
-          </div>
 
-          {/* Dashboard preview */}
-          <div className="rounded-[40px] bg-white p-6 shadow-2xl shadow-slate-200/60">
-            <div className="relative overflow-hidden rounded-[32px] bg-slate-950 p-6 text-white">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(249,115,22,0.18),_transparent_25%)]" />
-              <div className="relative grid gap-4 md:grid-cols-2">
-                <div className="space-y-4">
-                  <div className="rounded-3xl bg-slate-900/90 p-4">
-                    <div className="flex items-center justify-between text-xs text-slate-400">
-                      <span>Dashboard</span><span className="text-green-400">● Online</span>
-                    </div>
-                    <h2 className="mt-3 text-lg font-semibold">Aulas ao vivo e agendamento em um só lugar</h2>
-                  </div>
-                  <div className="rounded-3xl bg-slate-900/90 p-4">
-                    <p className="text-xs uppercase tracking-widest text-slate-400">Próximas aulas</p>
-                    <div className="mt-2 flex items-center gap-3">
-                      <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-[#F97316] to-orange-400" />
-                      <div>
-                        <p className="text-sm font-semibold">Matemática Avançada</p>
-                        <p className="text-xs text-slate-400">Aula em 20 min</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="rounded-[28px] border border-white/10 bg-slate-900/80 p-4">
-                  <div className="mb-4 text-xs uppercase tracking-widest text-slate-400">Estatísticas</div>
-                  <div className="space-y-3">
-                    <div className="rounded-3xl bg-slate-950/80 p-3">
-                      <p className="text-xs text-slate-400">Horas estudadas</p>
-                      <p className="mt-1 text-2xl font-semibold">13h</p>
-                    </div>
-                    <div className="rounded-3xl bg-slate-950/80 p-3">
-                      <p className="text-xs text-slate-400">Aulas concluídas</p>
-                      <p className="mt-1 text-2xl font-semibold">8/10</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="mt-6">
+                <button className="w-full rounded-full bg-[#F97316] px-5 py-3 text-sm font-semibold text-white hover:bg-[#EA6C0A]">ASSINE AGORA!</button>
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Como funciona */}
-        <section className="grid gap-6 py-12 lg:grid-cols-3">
-          {[
-            ['01', 'Escolha seu plano', 'Acesse toda a nossa biblioteca de conteúdos e pacotes personalizados para aulas presenciais.'],
-            ['02', 'Aulas Online', 'Conecte-se com mentores em tempo real e tenha aulas na plataforma exclusiva de videoconferência.'],
-            ['03', 'Professor Móvel', 'Solicite um professor versátil para suporte presencial no conforto da sua casa ou escritório.'],
-          ].map(([num, title, desc]) => (
-            <div key={num} className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-sm">
-              <div className="mb-4 inline-flex rounded-full bg-[#F97316]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-[#F97316]">{num}</div>
-              <h2 className="text-xl font-semibold text-[#0D2B5E]">{title}</h2>
-              <p className="mt-3 text-slate-600">{desc}</p>
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-[#0D2B5E]">Diferenciais do curso</h2>
+            <div className="rounded-2xl bg-white p-8 shadow-lg border border-slate-200 max-w-2xl">
+              <h3 className="text-xl font-semibold text-[#0D2B5E]">Diferencial do curso</h3>
+              <p className="mt-3 text-slate-700 font-semibold">AULAS DIRETAS AO PONTO</p>
+              <p className="mt-2 text-slate-600">Vídeos curtos, sem enrolação e focado na resolução de exercícios</p>
+
+              <h3 className="mt-6 text-xl font-semibold text-[#0D2B5E]">Professores</h3>
+              <p className="mt-3 text-slate-700 font-semibold">PROFESSORES DISPONÍVEIS</p>
+              <p className="mt-2 text-slate-600">A qualquer momento temos professores para ajudar na sua evolução quando você travar em algum exercício</p>
+
+              <h3 className="mt-6 text-xl font-semibold text-[#0D2B5E]">MÉTODO PASSO A PASSO DESDE A MATEMÁTICA BÁSICA</h3>
+              <p className="mt-3 text-slate-600">Todo conteúdo de matemática que você precisa para ser aprovado</p>
             </div>
-          ))}
+          </div>
+
+          {/* Removed dashboard preview as requested */}
         </section>
 
         {/* Planos */}
