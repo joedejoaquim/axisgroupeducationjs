@@ -32,13 +32,13 @@ export default function Home() {
               O eixo da sua <span className="text-[#F97316]">evolução</span> começa aqui.
             </h1>
 <section className="bg-orange-400 p-8 shadow-lg border border-slate-200 rounded-lg max-w-2xl">
-      <p className="text-center text-white text-xl">MATEMÁTICA <br /> COMPLETA</p>
+      <p className="text-center text-wh text-xl">MATEMÁTICA <br /> COMPLETA</p>
               <p className="mt-4 text-slate-700 text-[#111]">    APRENDA TODA MATEMÁTICA, DESDE O ZERO, DE UMA VEZ POR TODAS DE FORMA <strong className='text-black font-bold'>RÁPIDA E EFICIENTE PARA GARANTIR SUA APROVAÇÃO</strong> </p>
               <div className="mt-6">
                 <button className="w-full bg-green-600 px-5 py-3 text-sm rounded-lg font-semibold text-white ">ASSINE AGORA!</button>
               </div>
             <div className="bg-white p-8 shadow-lg rounded-lg max-w-2xl mt-5">
-              <h2 className="text-lg font-extrabold text-orange-400 text-center flex items-center justify-center gap-2"><FontAwesomeIcon icon={faLightbulb} className="text-orange-400 h-6 w-6" aria-hidden /> Prof Hélder <FontAwesomeIcon icon={faLightbulb} className="text-orange-400 h-6 w-6" aria-hidden /></h2>
+              <h2 className="text-xl font-extrabold text-orange-400 text-center flex items-center justify-center gap-2"><FontAwesomeIcon icon={faLightbulb} className="text-orange-400 h-6 w-6" aria-hidden /> Prof Hélder</h2>
               <p className="mt-1 text-base font-semibold text-black text-center">Matemática sem limites</p>
 
 
@@ -154,7 +154,6 @@ export default function Home() {
               <div className="flex items-center justify-center gap-2">
                 <FontAwesomeIcon icon={faStar} className="text-[#FFD700] h-6 w-6" aria-hidden />
                 <p id="course-title" className="text-xl text-center font-extrabold ">MATEMÁTICA  <span  className="text-[#FFD700]">PREMIUM</span></p>
-                <FontAwesomeIcon icon={faStar} className="text-[#FFD700] h-6 w-6" aria-hidden />
               </div>
               </div>
 
