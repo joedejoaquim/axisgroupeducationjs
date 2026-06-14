@@ -29,7 +29,7 @@ body {
 /* ── Hero section ── */
 .hero-section {
   background: linear-gradient(90deg, #031B52 0%, #0A1E55 50%, #17234A 100%);
-  min-height: 100vh;
+  min-height: auto;
 }
 
 .hero-section::before {
@@ -56,15 +56,7 @@ body {
 }
 
 .hero-geo-shapes::before {
-  content: "";
-  position: absolute;
-  top: 12%;
-  left: 8%;
-  width: 120px;
-  height: 120px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 50%;
-  transform: rotate(15deg);
+  content: none;
 }
 
 .hero-geo-shapes::after {
@@ -89,10 +81,9 @@ body {
 }
 
 .hero-stats-bar {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   left: 0;
   right: 0;
   z-index: 30;
-  transform: translateY(50%);
+  padding: 1rem 0 1.5rem;
 }

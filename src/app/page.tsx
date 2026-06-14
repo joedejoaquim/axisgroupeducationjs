@@ -180,10 +180,10 @@ export default function Home() {
           </div>
         </header>
 
-        <div className="relative z-10 flex-1 flex items-center">
-          <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-10 pb-36 sm:pb-40 lg:pb-44">
+        <div className="relative z-10 mb-[-140] flex-1 flex items-start pt-4 sm:pt-6">
+          <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-10 pb-4">
             <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-10 lg:gap-8 items-center">
-              <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-7">
+              <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 lg:space-y-5">
                 <span className="inline-block rounded-full bg-[#C45100] px-5 py-1.5 text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-[0.22em]">
                   Do Básico ao Avançado
                 </span>
@@ -265,18 +265,16 @@ export default function Home() {
 
         <div className="hero-stats-bar">
           <div className="mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-10">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
               {STATS.map(({ icon, value, label }) => (
                 <div
                   key={label}
-                  className="flex items-center gap-3 rounded-2xl bg-white px-4 py-4 sm:px-6 sm:py-5 shadow-[0_10px_40px_rgba(3,27,82,0.12)]"
+                  className="flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-[0_8px_30px_rgba(3,27,82,0.18)] border border-white/60 w-[calc(50%-6px)] sm:w-auto sm:min-w-[160px] sm:max-w-[200px]"
                 >
-                  <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border-2 border-[#0D2B5E] text-[#0D2B5E]">
-                    <FontAwesomeIcon icon={icon} className="h-4 w-4 sm:h-[18px] sm:w-[18px]" />
-                  </div>
+                  <FontAwesomeIcon icon={icon} className="h-7 w-7 shrink-0 text-[#0D2B5E]" />
                   <div className="min-w-0">
-                    <p className="text-lg sm:text-xl font-black text-[#0D2B5E] leading-none">{value}</p>
-                    <p className="text-[10px] sm:text-xs text-[#0D2B5E]/60 mt-1 leading-tight">{label}</p>
+                    <p className="text-base font-black text-[#0D2B5E] leading-none">{value}</p>
+                    <p className="text-[10px] text-[#0D2B5E]/60 mt-0.5 leading-tight">{label}</p>
                   </div>
                 </div>
               ))}
@@ -285,7 +283,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="h-28 sm:h-32 lg:h-36 bg-white" />
+      <div className="h-4 sm:h-6 bg-white" />
 
       {/* ── NOSSOS CURSOS ── */}
       <section id="cursos" className="py-16 sm:py-20 bg-white">
