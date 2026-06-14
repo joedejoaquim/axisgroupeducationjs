@@ -136,143 +136,126 @@ export default function Home() {
   return (
     <main className="bg-white">
 
-      {/* ── NAVBAR ── */}
-      <nav className="bg-[#0D2B5E] sticky top-0 z-50 shadow-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2.5 shrink-0">
-            <Image src="/assets/logoaxis.png" alt="Axis Center" width={44} height={44} className="shrink-0" />
-            <div className="leading-none">
-              <p className="text-sm font-black text-white tracking-[0.2em]">AXIS</p>
-              <p className="text-[10px] font-bold text-white/90 tracking-[0.15em] uppercase">Center</p>
-              <p className="text-[8px] text-white/50 tracking-[0.12em] uppercase">Escola Online</p>
-            </div>
-          </div>
+      {/* ── HERO (header + conteúdo + métricas) ── */}
+      <section className="hero-section relative flex flex-col overflow-hidden">
+        <div className="hero-geo-shapes" aria-hidden />
 
-          <div className="hidden lg:flex items-center gap-5 xl:gap-7 text-[13px] font-medium">
-            {NAV_LINKS.map(({ href, label, active }) => (
-              <a
-                key={label}
-                href={href}
-                className={`pb-0.5 transition-colors ${
-                  active
-                    ? 'text-[#F97316] border-b-2 border-[#F97316]'
-                    : 'text-white/85 hover:text-white'
-                }`}
-              >
-                {label}
-              </a>
-            ))}
-          </div>
-
-          <div className="flex items-center gap-2 shrink-0">
-            <Link
-              href="/login"
-              className="rounded-md border border-white/40 px-4 py-2 text-xs font-semibold text-white hover:bg-white/10 transition-colors"
-            >
-              Entrar
-            </Link>
-            <Link
-              href="/register"
-              className="rounded-md bg-[#F97316] px-4 py-2 text-xs font-bold text-white hover:bg-[#EA6C0A] transition-colors shadow-sm"
-            >
-              Assine Agora
-            </Link>
-          </div>
-        </div>
-      </nav>
-
-      {/* ── HERO ── */}
-      <section className="relative overflow-hidden hero-math-pattern">
-        {/* Orange organic shape — bottom right */}
-        <svg className="hero-orange-swoosh" viewBox="0 0 720 380" preserveAspectRatio="none" aria-hidden>
-          <path
-            d="M720,380 C520,380 420,280 480,180 C520,110 620,40 720,0 L720,380 Z"
-            fill="#F97316"
-          />
+        <svg className="hero-orange-blob" viewBox="0 0 680 420" preserveAspectRatio="none" aria-hidden>
+          <path d="M680,420 C480,420 380,300 440,190 C490,100 590,30 680,0 L680,420 Z" fill="#FF7A00" />
         </svg>
 
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14 pb-40 sm:pb-44 lg:pb-48">
-          <div className="grid lg:grid-cols-[1fr_1.05fr] gap-6 lg:gap-4 items-center">
-            {/* Left — copy & CTAs */}
-            <div className="space-y-5 sm:space-y-6 lg:pr-4">
-              <span className="inline-block rounded-full bg-[#F97316] px-4 py-1.5 text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-[0.2em] shadow-sm">
-                Do Básico ao Avançado
-              </span>
-
-              <h1 className="text-[1.85rem] sm:text-4xl xl:text-[3.15rem] font-black leading-[1.1] uppercase">
-                <span className="text-white">Domine Matemática</span>
-                <br />
-                <span className="text-[#F97316]">E Garanta Sua Aprovação!</span>
-              </h1>
-
-              <p className="text-white/85 text-sm sm:text-base max-w-lg leading-relaxed">
-                Aulas didáticas, exercícios resolvidos, simulados e suporte completo para transformar seus estudos.
-              </p>
-
-              <div className="flex flex-wrap gap-3 pt-1">
-                <Link
-                  href="/register"
-                  className="inline-flex items-center gap-3 rounded-lg bg-[#F97316] pl-5 pr-2 py-3 text-[11px] sm:text-xs font-bold text-white uppercase tracking-wide hover:bg-[#EA6C0A] transition-colors shadow-lg"
-                >
-                  Experimentar Grátis
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#F97316]">
-                    <FontAwesomeIcon icon={faPlay} className="h-3 w-3 ml-0.5" />
-                  </span>
-                </Link>
-                <Link
-                  href="/register"
-                  className="inline-flex items-center gap-3 rounded-lg border-2 border-white/60 bg-transparent pl-5 pr-2 py-3 text-[11px] sm:text-xs font-bold text-white uppercase tracking-wide hover:bg-white/10 transition-colors"
-                >
-                  Quero Ser Aluno
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20 text-white">
-                    <FontAwesomeIcon icon={faThumbsUp} className="h-3.5 w-3.5" />
-                  </span>
-                </Link>
+        <header className="relative z-40 w-full">
+          <div className="relative mx-auto flex max-w-[1320px] items-center justify-between px-4 py-4 sm:px-6 lg:px-10">
+            <div className="flex items-center gap-2.5 shrink-0 z-10">
+              <Image src="/assets/logoaxis.png" alt="Axis Center" width={46} height={46} className="shrink-0" />
+              <div className="leading-none hidden sm:block">
+                <p className="text-sm font-black text-white tracking-[0.18em]">AXIS</p>
+                <p className="text-[10px] font-bold text-[#FF7A00] tracking-[0.12em] uppercase">Center</p>
+                <p className="text-[8px] text-white/55 tracking-[0.1em] uppercase">Escola Online</p>
               </div>
             </div>
 
-            {/* Right — student + monitor (prototype layout) */}
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-[520px] h-[360px] sm:h-[420px] lg:h-[480px]">
-                {/* Monitor — behind student, right side */}
-                <div className="absolute right-0 top-[6%] w-[78%] sm:w-[74%] z-10">
-                  <div className="flex items-center gap-2 mb-2.5 pl-1">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F97316] shadow-lg ring-2 ring-[#F97316]/30">
-                      <FontAwesomeIcon icon={faPlay} className="h-3 w-3 text-white ml-0.5" />
+            <nav className="hidden xl:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-6 2xl:gap-8 text-[13px] font-medium">
+              {NAV_LINKS.map(({ href, label, active }) => (
+                <a
+                  key={label}
+                  href={href}
+                  className={`pb-1 transition-colors whitespace-nowrap ${
+                    active ? 'text-[#FF7A00] border-b-2 border-[#FF7A00]' : 'text-white/90 hover:text-white'
+                  }`}
+                >
+                  {label}
+                </a>
+              ))}
+            </nav>
+
+            <div className="flex items-center gap-2.5 shrink-0 z-10">
+              <Link href="/login" className="rounded-md border border-white px-4 py-2 text-xs font-semibold text-white bg-transparent hover:bg-white/10 transition-colors">
+                Entrar
+              </Link>
+              <Link href="/register" className="rounded-md bg-[#FF7A00] px-4 py-2 text-xs font-bold text-white hover:bg-[#E56E00] transition-colors">
+                Assine Agora
+              </Link>
+            </div>
+          </div>
+        </header>
+
+        <div className="relative z-10 flex-1 flex items-center">
+          <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-10 pb-36 sm:pb-40 lg:pb-44">
+            <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-10 lg:gap-8 items-center">
+              <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-7">
+                <span className="inline-block rounded-full bg-[#C45100] px-5 py-1.5 text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-[0.22em]">
+                  Do Básico ao Avançado
+                </span>
+
+                <h1 className="font-extrabold leading-[1.05] uppercase tracking-tight text-[1.5rem] sm:text-3xl md:text-4xl xl:text-[2.6rem] 2xl:text-[3.5rem]">
+                  <span className="block text-white">Domine Matemática</span>
+                  <span className="block text-[#FF7A00]">E Garanta Sua Aprovação!</span>
+                </h1>
+
+                <p className="text-white/75 text-sm sm:text-base max-w-[550px] leading-relaxed">
+                  Aulas didáticas, exercícios resolvidos, simulados e suporte completo para transformar seus estudos.
+                </p>
+
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-1 w-full sm:w-auto justify-center lg:justify-start">
+                  <Link
+                    href="/register"
+                    className="inline-flex items-center justify-between sm:justify-start gap-4 rounded-lg bg-[#FF7A00] pl-6 pr-2 py-3.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wide hover:bg-[#E56E00] transition-colors shadow-lg min-w-[220px]"
+                  >
+                    Experimentar Grátis
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-[#FF7A00]">
+                      <FontAwesomeIcon icon={faPlay} className="h-3.5 w-3.5 ml-0.5" />
+                    </span>
+                  </Link>
+                  <Link
+                    href="/register"
+                    className="inline-flex items-center justify-between sm:justify-start gap-4 rounded-lg border-2 border-white bg-transparent pl-6 pr-2 py-3.5 text-xs sm:text-sm font-bold text-white uppercase tracking-wide hover:bg-white/10 transition-colors min-w-[220px]"
+                  >
+                    Quero Ser Aluno
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#3D4F6F] text-white/90">
+                      <FontAwesomeIcon icon={faThumbsUp} className="h-4 w-4" />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="relative flex items-end justify-center min-h-[380px] sm:min-h-[480px] lg:min-h-[620px] xl:min-h-[700px]">
+                <div className="absolute right-0 top-[4%] sm:top-[2%] w-[82%] sm:w-[78%] max-w-[420px] z-10">
+                  <div className="flex items-center gap-2.5 mb-3">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#FF7A00] shadow-lg">
+                      <FontAwesomeIcon icon={faPlay} className="h-3.5 w-3.5 text-white ml-0.5" />
                     </span>
                     <p className="text-[10px] sm:text-[11px] font-bold text-white uppercase tracking-wide leading-snug">
                       Assista ao Vídeo de Boas-Vindas
                     </p>
                   </div>
 
-                  <div className="rounded-2xl overflow-hidden bg-slate-950 shadow-2xl ring-1 ring-white/10">
-                    <div className="relative aspect-[16/10] bg-gradient-to-br from-[#1a2744] via-[#243656] to-[#0a1e42]">
-                      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.08)_0%,transparent_50%)]" />
-                      <div className="absolute left-[8%] top-[12%] w-[38%] h-[55%] rounded bg-white/10 border border-white/10" />
-                      <div className="absolute right-[8%] bottom-[18%] left-[8%] h-[28%] rounded bg-black/30 border border-white/5" />
+                  <div className="rounded-2xl overflow-hidden bg-[#0c1428] shadow-[0_20px_50px_rgba(0,0,0,0.45)] ring-1 ring-white/10">
+                    <div className="relative aspect-[16/10] bg-gradient-to-br from-[#1e2d4a] via-[#152238] to-[#0a1225]">
+                      <div className="absolute left-[10%] top-[14%] w-[36%] h-[52%] rounded-sm bg-white/8 border border-white/10" />
+                      <div className="absolute inset-x-[8%] bottom-[16%] h-[26%] rounded-sm bg-black/35 border border-white/5" />
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#F97316] shadow-xl ring-4 ring-[#F97316]/25">
-                          <FontAwesomeIcon icon={faPlay} className="h-5 w-5 text-white ml-1" />
+                        <span className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-[#FF7A00] shadow-xl">
+                          <FontAwesomeIcon icon={faPlay} className="h-5 w-5 sm:h-6 sm:w-6 text-white ml-1" />
                         </span>
                       </div>
                     </div>
-                    <div className="bg-slate-900 px-3 py-2 text-center">
-                      <p className="text-[10px] sm:text-xs text-white/55">Aula 12 – Equações do 2º Grau</p>
+                    <div className="bg-[#111827] px-4 py-2.5 text-center border-t border-white/5">
+                      <p className="text-[10px] sm:text-xs text-white/50">Aula 12 – Equações do 2º Grau</p>
                     </div>
-                    <div className="h-3 bg-slate-800" />
-                    <div className="mx-auto mb-2 h-1 w-16 rounded-full bg-slate-600" />
+                    <div className="h-3.5 bg-[#1f2937]" />
+                    <div className="flex justify-center pb-2.5 pt-0.5 bg-[#1f2937]">
+                      <div className="h-1 w-14 rounded-full bg-[#4b5563]" />
+                    </div>
                   </div>
                 </div>
 
-                {/* Student — foreground, large, bottom aligned */}
-                <div className="absolute left-[-2%] sm:left-0 bottom-[-8%] z-20 w-[62%] sm:w-[58%] h-[108%] pointer-events-none [isolation:isolate]">
-                  <Image
+                <div className="relative z-20 flex items-end justify-center h-full w-full pointer-events-none">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src="/assets/pessoa1.png"
                     alt="Aluno Axis Center"
-                    fill
-                    priority
-                    sizes="(max-width: 768px) 260px, 320px"
-                    className="object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.45)] mix-blend-lighten"
+                    className="h-[340px] sm:h-[480px] lg:h-[580px] xl:h-[700px] w-auto max-w-[95%] object-contain object-bottom drop-shadow-[0_24px_48px_rgba(0,0,0,0.35)]"
                   />
                 </div>
               </div>
@@ -280,29 +263,20 @@ export default function Home() {
           </div>
         </div>
 
-        {/* White wave divider */}
-        <svg className="hero-white-wave" viewBox="0 0 1440 72" preserveAspectRatio="none" aria-hidden>
-          <path
-            d="M0,36 C240,8 480,64 720,36 C960,8 1200,56 1440,28 L1440,72 L0,72 Z"
-            fill="#ffffff"
-          />
-        </svg>
-
-        {/* Stats cards — overlap hero / white section */}
-        <div className="absolute bottom-0 left-0 right-0 z-30 translate-y-[52%] sm:translate-y-1/2">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="hero-stats-bar">
+          <div className="mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-10">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               {STATS.map(({ icon, value, label }) => (
                 <div
                   key={label}
-                  className="flex items-center gap-3 rounded-2xl bg-white px-4 py-4 sm:px-5 sm:py-5 shadow-[0_8px_30px_rgba(13,43,94,0.12)] border border-slate-100/80"
+                  className="flex items-center gap-3 rounded-2xl bg-white px-4 py-4 sm:px-6 sm:py-5 shadow-[0_10px_40px_rgba(3,27,82,0.12)]"
                 >
-                  <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border-2 border-[#0D2B5E] text-[#0D2B5E]">
-                    <FontAwesomeIcon icon={icon} className="h-4 w-4" />
+                  <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border-2 border-[#0D2B5E] text-[#0D2B5E]">
+                    <FontAwesomeIcon icon={icon} className="h-4 w-4 sm:h-[18px] sm:w-[18px]" />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-base sm:text-xl font-black text-[#0D2B5E] leading-none">{value}</p>
-                    <p className="text-[10px] sm:text-xs text-slate-500 mt-1 leading-tight">{label}</p>
+                    <p className="text-lg sm:text-xl font-black text-[#0D2B5E] leading-none">{value}</p>
+                    <p className="text-[10px] sm:text-xs text-[#0D2B5E]/60 mt-1 leading-tight">{label}</p>
                   </div>
                 </div>
               ))}
@@ -311,8 +285,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Spacer for floating stats */}
-      <div className="h-28 sm:h-32 bg-white" />
+      <div className="h-28 sm:h-32 lg:h-36 bg-white" />
 
       {/* ── NOSSOS CURSOS ── */}
       <section id="cursos" className="py-16 sm:py-20 bg-white">

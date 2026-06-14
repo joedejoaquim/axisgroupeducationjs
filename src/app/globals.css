@@ -13,6 +13,10 @@
 :root {
   --background: #F4F7FC;
   --foreground: #0D2B5E;
+  --hero-orange: #FF7A00;
+  --hero-blue-start: #031B52;
+  --hero-blue-mid: #0A1E55;
+  --hero-blue-end: #17234A;
 }
 
 body {
@@ -22,44 +26,73 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.hero-math-pattern {
-  background-color: #0a1e42;
-  background-image:
-    radial-gradient(ellipse 80% 60% at 70% 80%, rgba(249, 115, 22, 0.18) 0%, transparent 55%),
-    radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.04) 0%, transparent 45%);
+/* ── Hero section ── */
+.hero-section {
+  background: linear-gradient(90deg, #031B52 0%, #0A1E55 50%, #17234A 100%);
+  min-height: 100vh;
 }
 
-.hero-math-pattern::before {
-  content: "∑ ∫ π √ x² Δθ ∞ f(x)=ax²+bx+c lim→0 sin cos tan log α β γ";
+.hero-section::before {
+  content: "∑ ∫ π √ x² Δθ ∞ f(x)=ax²+bx+c sin cos tan α β γ";
   position: absolute;
   inset: 0;
-  font-size: 13px;
-  line-height: 3.5;
-  letter-spacing: 0.22em;
-  color: rgba(255, 255, 255, 0.06);
-  word-spacing: 2.8rem;
+  font-size: 14px;
+  line-height: 3.8;
+  letter-spacing: 0.25em;
+  color: rgba(255, 255, 255, 0.045);
+  word-spacing: 3rem;
   overflow: hidden;
   white-space: pre-wrap;
   pointer-events: none;
   z-index: 0;
 }
 
-.hero-orange-swoosh {
+.hero-geo-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-geo-shapes::before {
+  content: "";
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+
+.hero-geo-shapes::after {
+  content: "";
+  position: absolute;
+  bottom: 28%;
+  left: 42%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transform: rotate(45deg);
+}
+
+.hero-orange-blob {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: min(62vw, 720px);
-  height: min(42vw, 380px);
+  width: min(58vw, 680px);
+  height: min(50vh, 420px);
   pointer-events: none;
   z-index: 1;
 }
 
-.hero-white-wave {
+.hero-stats-bar {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 72px;
-  pointer-events: none;
-  z-index: 12;
+  z-index: 30;
+  transform: translateY(50%);
 }
